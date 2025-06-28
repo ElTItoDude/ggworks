@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Herrería Moderna y Familiar</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+      scroll-behavior: smooth;
+    }
+    body {
+      margin: 0;
+      background: linear-gradient(to right, #eeeeee, #fafafa);
+      color: #333;
+    }
+    header {
+      background-color: #222;
+      color: #fff;
+      padding: 2rem 1rem;
+      text-align: center;
+      animation: fadeInDown 1s ease-out;
+    }
+    header img {
+      height: 80px;
+      margin-bottom: 1rem;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+    }
+    nav {
+      background-color: #333;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 1.5rem;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ffb400;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1600488991405-45b7f408b3c8') center/cover no-repeat;
+      color: #fff;
+      padding: 6rem 1rem;
+      text-align: center;
+      animation: fadeIn 1.5s ease-in;
+    }
+    .hero h2 {
+      font-size: 2.75rem;
+      margin: 0;
+      text-shadow: 1px 1px 3px #000;
+    }
+    .section {
+      padding: 4rem 1rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+    .section h3 {
+      font-size: 2.2rem;
+      margin-bottom: 1.5rem;
+      color: #222;
+    }
+    ul li {
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+      animation: fadeIn 1.5s ease-in;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    footer {
+      background-color: #111;
+      color: #fff;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 4rem;
+    }
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      z-index: 1000;
+    }
+    .whatsapp img {
+      width: 35px;
+      height: 35px;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      .hero h2 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="C:\Users\ROBERTO\OneDrive\Desktop\TALLER GG\img\logo.png" alt="GG Taller Logo">
+    <h1></h1>
+    <p>Herrería Moderna, Familiar e Industrial</p>
+  </header>
+
+  <nav>
+    <a href="#servicios">Servicios</a>
+    <a href="#galeria">Trabajos</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section class="hero">
+    <h2>Soluciones de herrería con calidad y estilo</h2>
+  </section>
+
+  <section class="section" id="servicios">
+    <h3>Nuestros Servicios</h3>
+    <ul>
+      <li>Fabricación de puertas, portones, ventanas y protecciones</li>
+      <li>Asadores, bancas, lámparas y piezas modernas</li>
+      <li>Instalación y mantenimiento de portones automáticos</li>
+      <li>Proyectos personalizados y diseño a medida</li>
+    </ul>
+  </section>
+
+  <section class="section" id="galeria">
+    <h3>Galería de Trabajos</h3>
+    <div class="gallery">
+      <img src="C:\Users\ROBERTO\OneDrive\Desktop\TALLER GG\img\PUERTADOC.jpg" alt="Trabajo 1">
+      <img src="C:\Users\ROBERTO\OneDrive\Desktop\TALLER GG\img\IMG-20250627-WA0005.jpg" alt="Trabajo 2">
+      <img src="C:\Users\ROBERTO\OneDrive\Desktop\TALLER GG\img\ANTES.jpg" alt="Trabajo 3">
+      <img src="C:\Users\ROBERTO\OneDrive\Desktop\TALLER GG\img\DESPUES.jpg" alt="Trabajo 4">
+    </div>
+  </section>
+
+  <section class="section" id="contacto">
+    <h3>Contacto</h3>
+    <p>WhatsApp: 866 xxx xxxx</p>
+    <p>Facebook e Instagram: @GGTaller</p>
+    <p>Correo: contacto@ggtaller.com</p>
+  </section>
+
+  <a class="whatsapp" href="https://wa.me/52866xxxxxxx" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+  </a>
+
+  <footer>
+    <p>&copy; 2025 GG Taller. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
